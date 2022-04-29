@@ -80,20 +80,8 @@ function App() {
     if (val === "%") {
       setInput(parseFloat(input) / 100);
     }
-    if (val === "÷") {
+    if (val === "÷" || val === "×" || val === "-" || val === "+") {
       saveHistory(val)
-      resetInput.current = true;
-    }
-    if (val === "×") {
-      saveHistory(val);
-      resetInput.current = true;
-    }
-    if (val === "-") {
-      saveHistory(val);
-      resetInput.current = true;
-    }
-    if (val === "+") {
-      saveHistory(val);
       resetInput.current = true;
     }
     if (val === "=") {
