@@ -5,31 +5,35 @@
     margin-top: calc(100vh / 2 - 500px / 2 - 5px);
     margin-left: auto;
     margin-right: auto;
-    background-color: #444;
+    background-color: #333;
     border-radius: 10px;
     box-shadow: 2px 2px 20px rgba(0,0,0,0.15);
     padding: 10px;
 }
 .history {
     width: '100%';
-    min-height: 70px;
-    background-color: yellow;
+    min-height: 40px;
+    color: #ddd;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 5px 10px;
 }
 .screen {
+    background-color: #222;
     width: '100%';
     min-height: 80px;
-    background-color: aqua;
     justify-content: center;
     display: flex;
     justify-content: right;
     font-size: 40px;
+    margin: 2px 1.5px;
 }
 .screen p {
-    background-color: pink;
     margin: 10px 20px 10px 20px;
+    color: #eee;
 }
 .buttonContainer {
-    background-color: green;
     display: flex;
     flex-wrap: wrap;
     height: 350px;
@@ -38,11 +42,23 @@
     --margin: 2px;
     margin: var(--margin);
     flex: 1 0 calc(25% - var(--margin) * 2);
-    background-color: orange;
+    background-color: #555;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #eee;
 }
 .buttonZero {
     flex: 1 0 calc(50% - var(--margin) * 2);
+}
+.buttonOperator {
+    background-color: orange;
+    color: #eee;
+    font-weight: 600;
+    font-size: 20px;
+}
+.buttonFunction {
+    background-color: #ccc;
+    color: #333;
+    font-weight: 600;
 }

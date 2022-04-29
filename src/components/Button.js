@@ -1,7 +1,7 @@
 import "./Styles.css";
 
-const Button = ({ className, value }) => {
-    return <div className={className}>{value}</div>;
+const Button = ({ className, value, onClick }) => {
+    return <div className={className} onClick={onClick}>{value}</div>;
 }
 
 export default Button

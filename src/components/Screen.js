@@ -2,7 +2,7 @@ import "./Styles.css";
 
 const Screen = ({ value }) => {
     return <div className="screen">
-        <p>{value}</p>
+        <p placeholder="0">{value}</p>
         </div>;
 }
 
